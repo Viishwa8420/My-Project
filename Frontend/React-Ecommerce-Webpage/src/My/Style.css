@@ -1,0 +1,310 @@
+* {
+    outline: none;
+}
+
+/* General Styles */
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1500px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    transition: all 0.5s !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 900px;
+    }
+
+    header ul.searchBarMenu,
+    nav ul.navbarMenu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Offer .OfferBanner::before {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    header ul.searchBarMenu,
+    nav ul.navbarMenu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Offer .OfferBanner::before {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    header ul.searchBarMenu,
+    nav ul.navbarMenu {
+        text-align: center;
+    }
+
+    .Offer .OfferBanner::before {
+        display: none;
+    }
+
+    .PopularProduct div.product-card div.icons {
+        right: 5% !important;
+    }
+}
+
+@media (max-width: 400px) {
+    nav ul.navbarMenu li a {
+        font-size: 14px;
+    }
+    
+    footer a {
+        font-size: 12px;
+    }
+}
+
+
+/* Header start  */
+
+header ul.searchBarMenu li a,
+header .searchBarMenu li a.account ul {
+    transition: all 0.5s;
+}
+
+header ul.searchBarMenu li a:hover {
+    color: green !important;
+}
+
+header ul.searchBarMenu li:hover a.account ul {
+    top: 35px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+header ul.searchBarMenu li a.account ul li:hover a {
+    color: green !important;
+}
+
+/* Header end  */
+
+/* NavBar start  */
+nav ul.navbarMenu li a,
+nav ul.navbarMenu li ul.dropdown,
+nav div.categoriesToggle ul.NavBar-Category {
+    transition: all 0.5s;
+}
+
+nav div.categoriesToggle:hover ul.NavBar-Category {
+    top: 43px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+nav ul.navbarMenu li a:hover {
+    color: green !important;
+}
+
+nav ul.navbarMenu li:hover ul.dropdown {
+    top: 37px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* NavBar end  */
+
+/* BannerSlider start  */
+
+.BannerSlider button:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+/* BannerSlider end  */
+
+/* Offer start  */
+
+.Offer .OfferBanner::before {
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    background-color: #0006;
+    top: -15%;
+    left: -7%;
+    border-radius: 0 50% 50% 50%;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.Offer .OfferBanner:hover::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    left: 0;
+    top: 0;
+}
+
+.Offer .OfferBanner button:hover {
+    background-color: #000;
+    border-color: white;
+}
+
+/* Offer end  */
+
+/* PopularProduct start  */
+
+.PopularProduct div.product-card div.card-body a,
+.PopularProduct div.product-card div.card-body a span,
+.PopularProduct div.product-card div.icons {
+    transition: all 0.3s;
+}
+
+.PopularProduct button:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+.PopularProduct div.product-card:hover div.icons {
+    right: 10% !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.PopularProduct div.product-card div.card-body a:hover,
+.PopularProduct div.product-card div.card-body a:hover span {
+    color: green !important;
+}
+
+/* PopularProduct end  */
+
+/* OfferSlider start  */
+
+.OfferSlider button:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+/* OfferSlider end  */
+
+/* ProductCardSlider start  */
+
+.ProductCardSlider div.product-card div.card-body a,
+.ProductCardSlider div.product-card div.card-body a span,
+.ProductCardSlider div.product-card div.icons {
+    transition: all 0.3s;
+}
+
+.ProductCardSlider button:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+.ProductCardSlider div.product-card:hover div.icons {
+    right: 10% !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.ProductCardSlider div.product-card div.card-body a:hover,
+.ProductCardSlider div.product-card div.card-body a:hover span {
+    color: green !important;
+}
+
+/* ProductCardSlider end  */
+
+/* Blog start  */
+
+.Blog .blog-content a,.Blog .blog-card .blog-img img{
+    transition: all 0.3s;
+}
+
+.Blog .blog-content a:hover{
+    color: green !important;
+}
+
+.Blog .blog-card:hover .blog-img img{
+    transform: scale(1.1) rotate(4deg);
+}
+
+/* Blog end  */
+
+/* footer start   */
+
+footer a,footer a i{
+    transition: all 0.3s;
+}
+footer a:hover{
+    color: green !important;
+}
+footer a:hover i{
+    color: green !important;
+}
+footer .footer-img a::before{
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0009;
+    border-radius: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+footer .footer-img a:hover::before,footer .footer-img a:hover i{
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: white !important;
+}
+
+/* footer end  */
